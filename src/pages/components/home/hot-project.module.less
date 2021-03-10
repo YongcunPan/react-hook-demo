@@ -1,0 +1,39 @@
+.list{
+    .item{
+        display: flex;
+        padding: 10px 0;
+        font-size: 13px;
+        .order,.viewCount{
+            text-align: center;
+        }
+        .order{
+            width: 50px;
+            padding-right: 10px;
+            em{
+                // font-size: 12px;
+                font-style: normal;
+                background: #ccc;
+                display: inline-block;
+                width: 20px;
+                color: #fff;
+                &.active{
+                    background:#0f8605;
+                }
+            }
+        }
+        .viewCount{
+
+        }
+        .title{
+            flex:1;
+            overflow: hidden;
+        }
+        &.tableTitle{
+        font-weight: bold;
+        color: #000;
+            .title{
+                text-align: center;
+            }
+        }
+    }
+}

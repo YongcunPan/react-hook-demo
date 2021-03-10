@@ -1,0 +1,65 @@
+.navLink{
+    display: inline-block;
+    position: relative;
+    color:#666;
+    margin-right: 20px;
+    font-size: 14px;
+    &:after{
+        content: '';
+        position:absolute;
+        height: 14px;
+        width: 1px;
+        right: -10px;
+        top:4px;
+        background: #666;
+    }
+    &:last-child{
+        margin-right: 0;
+        &:after{
+            visibility: hidden;
+        }
+    }
+}
+.header{
+    padding: 20px 0 10px;
+    border-bottom: 4px solid #0f8605;
+    background:#fff;
+    .headerWrap{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 328px;
+        cursor: pointer;
+    }
+    .topMenu{
+        flex:1;
+        overflow: hidden;
+        text-align: right;
+        align-self:flex-end;
+        a{
+            .navLink;
+        }
+    }
+}
+
+.footer{
+    text-align: center;
+    color:#666;
+    padding:60px 0;
+    .footerMenu{
+        padding-bottom: 10px;
+    }
+    a{
+        .navLink;
+    }
+}
+.loginFooter{
+    color:#fff;
+    a{
+        color:#fff;
+        &:after{
+            background:#fff;
+        }
+    }
+}

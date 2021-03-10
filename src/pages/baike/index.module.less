@@ -1,0 +1,51 @@
+.baike{
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .listWrap{
+        flex:1;
+        overflow: hidden;
+    }
+    .sideBar{
+        width: 318px;
+        margin-left: 20px;
+    }
+}
+
+.baikeList{
+    .item{
+        background: #fff;
+        padding: 16px 20px;
+        margin-bottom: 18px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        h4{
+            a{
+                font-size: 16px;
+                color:#000;
+                font-weight: bold;
+            }
+        }
+        .desc{
+            color:#333;
+            a{
+                display: inline-block;
+                margin-left: 8px;
+                color:#E7BF04;
+            }
+        }
+        .favorite,.time{
+            font-size: 13px;
+        }
+        .time{
+            margin-right: 10px;
+        }
+        .favorite{
+            cursor: pointer;
+            i{
+                margin-right: 4px;
+            }
+        }
+    }
+}

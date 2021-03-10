@@ -1,0 +1,31 @@
+.list{
+    background:url(~aliasimgurl/img_notices_scroll.png) no-repeat 0 center;
+    background-size: 71px 23px;
+    padding-left: 80px;
+    overflow: hidden;
+    margin: 10px 0;
+    .item{
+        font-size: 12px;
+        font-weight: bold;
+        .title{
+            padding:4px 0 4px 12px;
+            overflow: hidden;
+            position:relative;
+            color:#000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:before{
+                position:absolute;
+                content: '';
+                left: 0;
+                top:50%;
+                margin-top: -2px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background:#999;
+            }
+        }
+    }
+}

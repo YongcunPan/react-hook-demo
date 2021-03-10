@@ -1,0 +1,53 @@
+// 首页
+.projectmarket{
+    margin-bottom: 20px;
+}
+.mainWithBar{
+    display: flex;
+    margin-bottom: 20px;
+    >div{
+        overflow: hidden;
+        margin-left: 20px;
+        &:first-child{
+            margin-left: 0;
+        }
+
+    }
+    .lastDiv{
+        display: flex;
+        >div{
+            flex:1;
+            overflow: hidden;
+            margin-left: 20px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    .leftPart{
+        flex:1;
+        overflow: hidden;
+    }
+    .sideBar{
+        width: 334px;
+        overflow: hidden;
+    }
+}
+
+
+// list-page
+
+.list-page{
+    margin: 30px 0;
+    display: flex;
+    .sub-nav{
+        width: 240px;
+        overflow: hidden;
+    }
+    .data-list{
+        flex:1;
+        overflow: hidden;
+        background: #fff;
+        min-height: 1000px;
+    }
+}
