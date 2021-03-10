@@ -1,0 +1,32 @@
+.biddingList{
+    .item{
+        display: flex;
+        padding: 10px 0;
+        font-size: 16px;
+        border-bottom: 1px solid #f2f4f6;
+        .title,.type,.area,.regin,.biddingType{
+            flex:1;
+            overflow: hidden;
+            text-align: center;
+        }
+        .title{
+            flex:2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .time{
+            width: 108px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        &.tableTitle{
+        font-weight: 500;
+        color: #000;
+        }
+        &:last-child{
+            border-bottom:none;
+        }
+    }
+}

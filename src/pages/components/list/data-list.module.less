@@ -1,0 +1,49 @@
+.wrap{
+    padding: 20px 40px;
+    .title{
+        font-size: 18px;
+        color:#333;
+        border-bottom:1px solid #ddd;
+        padding-bottom: 16px;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        min-height: 300px;
+        .item{
+            display: flex;
+            padding:10px 0;
+            border-bottom: 1px dotted #ddd;
+            font-size: 16px;
+            .data-title{
+                flex:1;
+                overflow: hidden;
+                cursor: pointer;
+                padding-left: 18px;
+                position: relative;
+                &:before{
+                    position:absolute;
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    top:50%;
+                    left: 0;
+                    background: #ddd;
+
+                }
+            }
+            &:hover{
+                color:#0f8605;
+                .data-title:before{
+                    background:#0f8605;
+                }
+            }
+            &:last-child{
+                border-bottom:none;
+            }
+            .data-time{
+                overflow: hidden;
+            }
+        }
+    }
+}

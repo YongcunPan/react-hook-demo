@@ -1,0 +1,98 @@
+.body{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    .sideBar{
+        width: 280px;
+        margin-right: 20px;
+        background: #fff;
+    }
+    .mainBody{
+        flex: 1;
+        overflow: hidden;
+    }
+}
+.listTitle{
+    display: flex;
+    .item{
+        flex:1;
+        margin-right: 20px;
+        border-radius: 6px;
+        background:#a750a7;
+        color:#fff;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        .num{
+            text-align: center;
+            font-size: 36px;
+        }
+        .label{
+            position: relative;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &.active{
+            .label:before{
+                position:absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius:50%;
+                background:#fff;
+                top:4px;
+                right: 0;
+            }
+            .label:after{
+                position:absolute;
+                content: "";
+                width: 8px;
+                height: 14px;
+                border-right: 2px solid #0cad33;
+                border-bottom: 2px solid #0cad33;
+                top:6px;
+                right: 6px;
+                z-index: 10;
+                transform:rotate(45deg);
+            }
+        }
+        &:nth-child(2){
+            background:#24a7ff;
+        }
+        &:nth-child(3){
+            background:#247cd3;
+        }
+        &:nth-child(4){
+            background:#f5a73d;
+        }
+    }
+}
+
+.currentTopic{
+    margin: 20px auto 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.dataList{
+    .item{
+        display: flex;
+        padding:10px 6px;
+        align-items: center;
+        border-bottom:1px solid #f3f6f7;
+        font-size: 16px;
+        .title{flex:1;}
+        .action,.time{
+            width: 160px;
+            text-align: center;
+        }
+        &:nth-child(1){
+            background:#eff2f9;
+            font-size: 18px;
+            font-weight: bold;
+            .title{
+                text-align: center;
+            }
+        }
+    }
+}

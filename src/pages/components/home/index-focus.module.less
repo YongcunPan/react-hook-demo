@@ -1,0 +1,59 @@
+.list{
+    overflow: hidden;
+    margin-top: 20px;
+    position:relative;
+    padding: 0 240px;
+    background:#fff;
+    .item{
+        font-size: 16px;
+        img{
+
+        }
+    }
+    .swiper-pagination{
+        position: absolute;
+        padding: 0 20px;
+        text-align: right;
+        right: 0;
+        z-index: 9999;
+        .pagination-item{
+            background: #fff;
+        }
+    }
+    .type-and-regin,.loginForm{
+        position:absolute;
+        top:0;
+        z-index: 9999;
+        height: 100%;
+        width: 240px;
+        padding:10px;
+    }
+    .type-and-regin{
+        left: 0;
+    }
+    .loginForm{
+        right: 0;
+        .extInfo{
+            border: 1px solid #0e9203;
+            border-radius:3px;
+            padding:2px 6px;
+            margin-bottom: 6px;
+            .extInfoTitle{
+                text-align: center;
+                color:#0e9203;
+            }
+            .extInfoList{
+                display: flex;
+                flex-wrap: wrap;
+                .listItem{
+                    width: 50%;
+                    font-size: 12px;
+                    color:#0e9203;
+                    i{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

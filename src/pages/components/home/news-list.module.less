@@ -1,0 +1,50 @@
+.list{
+
+    .before{
+        display: flex;
+        margin: 20px 0 10px;
+        .item{
+            flex:1;
+            margin-right: 10px;
+            position: relative;
+            overflow: hidden;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        .title{
+            position:absolute;
+            padding: 6px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            color:#fff;
+            font-size: 13px;
+            background: rgba(0,0,0,.6);
+        }
+
+    }
+    .after{
+        .item{
+            font-size: 13px;
+            .title{
+                padding:6px 0 6px 12px;
+                overflow: hidden;
+                position:relative;
+                &:before{
+                    position:absolute;
+                    content: '';
+                    left: 0;
+                    top:50%;
+                    margin-top: -2px;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background:#999;
+                }
+            }
+
+        }
+    }
+
+}

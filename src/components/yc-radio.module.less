@@ -1,0 +1,45 @@
+.yc-radio {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 15px;
+  user-select: none;
+
+  .label {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+
+  }
+
+  .list {
+    padding-left: 10px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 20px;
+
+    .item {
+      font-style: normal;
+      margin-right: 8px;
+      cursor: pointer;
+      padding: 0 10px;
+      border-radius: 3px;
+
+      &.active {
+        background: #5fb06b;
+        color: #fff;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .toggle {
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+}

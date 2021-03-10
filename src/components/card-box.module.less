@@ -1,0 +1,63 @@
+.cardbox{
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px 18px;
+    .title{
+        padding:12px 0 12px 14px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        font-weight: bold;
+        color:#000;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:before{
+            position:absolute;
+            top:50%;
+            left: 0;
+            content: '';
+            width: 4px;
+            height: 18px;
+            background:#0f8605;
+            margin-top: -8px;
+        }
+        .ext{
+            margin-left: 30px;
+            i{
+                margin-right: 20px;
+                font-style: normal;
+                color:#999;
+                position:relative;
+                cursor: pointer;
+                &:hover{
+                    color:#16A20A;
+                }
+                &:after{
+                    position:absolute;
+                    content: '';
+                    width: 1px;
+                    height: 16px;
+                    top:50%;
+                    margin-top: -6px;
+                    right: -10px;
+                    background:#ddd;
+                }
+                &:last-child{
+                    margin-right: 0;
+                    &:after{
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+        .blank{
+            flex:1;
+            overflow: hidden;
+        }
+        .moreBtn{
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

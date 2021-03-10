@@ -1,0 +1,32 @@
+.list{
+    .item{
+        display: flex;
+        padding: 10px 0;
+        font-size: 13px;
+        color:#333;
+        .title,.type,.area,.regin,.biddingType{
+            flex:1;
+            overflow: hidden;
+            text-align: center;
+        }
+        .title{
+            flex:2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .time{
+            width: 108px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        &.tableTitle{
+        font-weight: bold;
+        color: #000;
+        }
+        &:nth-child(2n){
+            background: #efefef;
+        }
+    }
+}
